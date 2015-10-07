@@ -2,11 +2,11 @@
 title: "Regression Models Course Notes"
 author: "Xing Su"
 output:
+  html_document:
+    toc: yes
   pdf_document:
     toc: yes
     toc_depth: 3
-  html_document:
-    toc: yes
 header-includes: \usepackage{graphicx} \usepackage{color} \usepackage{mathtools}
 ---
 $\pagebreak$
@@ -163,7 +163,7 @@ $\pagebreak$
 
 ```{r fig.height = 2.5, fig.width = 3, fig.align='center', echo=FALSE, message = FALSE}
 # install grid and png packages if not present
-library(png); library(grid); doMC::registerDoMC(cores = 4)
+library(png); library(grid); #doMC::registerDoMC(cores = 4)
 grid.raster(readPNG("figures/1.png"))
 ```
 
